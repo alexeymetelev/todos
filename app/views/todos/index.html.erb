@@ -1,0 +1,18 @@
+<div id="app">
+  <h1>Todos</h1>
+
+  <%= link_to 'Add a new todo', new_todo_path %>
+
+  <ul class='todos'>
+    <li v-for="todo in todos">
+      {{ todo.title }}
+
+      <%# <div v-if="todo.completed" %1> %>
+      <%#   <%= button_to 'Mark Incomplete', todo_completion_path(todo), method: :delete %1> %>
+      <%# </div> %>
+      <%# <% else %1> %>
+      <%#   <%= button_to 'Mark Complete', todo_completion_path(todo) %1> %>
+      <%# <% end %1> %>
+    </li>
+  </ul>
+</div>
