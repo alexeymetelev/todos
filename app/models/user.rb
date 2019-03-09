@@ -10,4 +10,8 @@ class User
   def signed_in?
     @email.present?
   end
+
+  def total_todos
+    Todo.count
+   end
 end
