@@ -13,8 +13,11 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require 'codacy-coverage'
-Codacy::Reporter.start
+require 'simplecov'
+SimpleCov.start
+
+# require 'codacy-coverage'
+# Codacy::Reporter.start
 
 # require 'coveralls'
 # Coveralls.wear!
